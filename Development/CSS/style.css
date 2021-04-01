@@ -1,0 +1,143 @@
+/*Change the color of links on hover*/
+.menu_bar tr th a:hover {
+	background-color: pink;
+	color: black;
+}
+/*Styles the links inside the navigation bar*/
+.menu_bar tr th a {
+	height:30px;
+	text-align:center;
+	display: block;
+	color:brown;
+	text-decoration: none;
+}
+/*Adds a style to navigation bar*/
+.menu_bar{
+	width:80%;
+	height:35px;
+	text-align:center;
+	margin:auto;
+	padding:0;
+	background-color:rgb(223, 195, 22);
+}
+/*Sets white color to current link on navigation bar*/
+.current{
+	background-color:white;
+}
+/*Adds a style to image of table*/
+.tables tr td img{
+	width:700px;
+}
+/*Change the color of links on hover*/
+.tables tr th a:hover{
+	color: rgb(121, 255, 77);
+}
+/*Styles the links inside the table*/
+.tables tr th a{
+	height:40px;
+	text-align:center;
+	display: block;
+	color:rgb(0, 255, 255);
+	text-decoration: none;
+}
+/*Styles the header*/
+header{
+	font-family:Brush Script Std, Brush Script MT, cursive;
+	color:brown;
+	font-size: 20px;
+	margin-left: 130px;
+	text-align:center;
+}
+/*Adds background color to body*/
+body{
+	background-color:rgb(248, 215, 225);
+}
+/*Adds a styles to text and image of table*/
+.tables{
+	color:rgb(243, 231, 203);
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding:20px;
+	background:url("../images/art7.jpg");
+	background-size: 100% 100%;
+}
+/*Adds a style to text and image of footer table*/
+.footer_table{
+	color: rgb(167, 233, 168);
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding:10px;
+	background-color:rgb(109, 85, 86);
+}
+/*Adds a space to image of footer table*/
+.footer_table tr th img{
+	padding: 0px 10px;
+}
+/*Adds a style to text and image of categories table*/
+.categories{
+	color:green;
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding:10px;	
+	background-color:rgb(206, 199, 181);
+}
+/*Adds a style to text and image of pictures table*/
+.pictures{
+	cellspacing:5px;
+	background-color:white;
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding:10px;
+}
+/*Adds a style to text and image of photos table*/
+.photos{
+	color:green;
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding:10px;
+	background-color:rgb(206, 199, 181);
+}
+/*Sets the width of text field*/
+.textbox{
+	width: 200px;
+}
+/*Adds a space to left side of caption*/
+figcaption{
+	padding-left:20px;
+}
+/*Sets the width of table*/
+#exhibition table{
+	width: 1065px;
+}
+/*Floats the image to left side*/
+#exhibition table tr th img{
+	float:left;
+}
+/*Adds a space to left side of caption*/
+#exhibition table tr th figcaption{
+	padding-left: 400px;
+}
+/*Sets the width of table*/
+#event table{
+	width: 1065px;
+}
+/*Floats the image to left side*/
+#event table tr th img{
+	float:left;
+}
+/*Adds a space to left side of caption*/
+#event table tr th figcaption{
+	padding-left: 793px;
+}
+/*Adds a style to image*/
+.overlay{
+	margin-left:135px;
+	position:absolute;
+	width:1063px;
+	height:600px;
+}

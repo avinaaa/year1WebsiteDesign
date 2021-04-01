@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html>
+	<head> <!--Head Starts-->
+		<title>Museum of Art & Photography</title> <!--Title of the page-->
+		<meta name="description" content="London Museum of Art & Photography">
+		<meta name="Author" content="Avina Poudel">
+		<link rel="stylesheet" href="../CSS/style.css"> <!--Imports the style.css from CSS folder-->
+		<style>
+			/*Aligns the body text to center*/
+			.body{ 
+				text-align:center;
+			}
+			/*Adds the styles to slider*/
+			#exhibition_slide{ 
+				margin-top:85px;
+				padding-left:223px;
+				padding-bottom:15px;
+			}
+			/*Styles the image of slider*/
+			#exhibition_slide img{ 
+				width: 900px;
+				height: 500px;
+			}
+			/*Styles the image*/
+			#exhibition table tr th img{ 
+				width: 800px;
+				height: 300px;
+			}
+			/*Sets color to the caption*/
+			#exhibition table tr th figcaption{ 
+				color: rgb(198, 131, 131);
+			}
+		</style>
+	</head> <!--Head Ends-->
+	<body> <!--Body Starts-->
+		<header> <!--Header Starts-->
+			<table> <!--Table Starts-->
+				<tr>
+					<!--Adds Logo and its styles-->
+					<th> 
+						<a href="home.html"><img src="../images/logo.png" alt="logo" width="150px" height="80px"></a>
+					</th>
+					<!--Setd Header of webpage-->
+					<th> 
+						<h1 style="padding-top:15px;"> London Museum of Art & Photography </h1>
+					</th>
+				</tr>
+			</table> <!--Table Ends-->
+		</header> <!--Header Ends-->
+		<nav> <!--Navigation Starts-->
+			<table class="menu_bar"> <!--Table Starts-->
+				<!--Creates navigation bar which contains links-->
+				<tr>
+					<th class="menu">
+						<a href="home.html"><img src="../images/home.png" width="80px" height="30px"></a>
+					</th>
+					<th class="menu">
+						<a href="art.html">Art</a>
+					</th>
+					<th class="menu">
+						<a href="photo.html">Photography</a>
+					</th>
+					<th class="menu">
+						<a href="event.html">Events</a>
+					</th>
+					<th class="current">
+						<a href="exhibition.html">Exhibitions</a>
+					</th>
+					<th class="menu">
+						<a href="feedback.html"><img src="../images/feedback.png" width="80px" height="30px"></a>
+					</th>
+				</tr>
+			</table> <!--Table Ends-->
+		</nav> <!--Navigation Ends-->
+		<img src="../images/bg2.png" class="overlay"> <!--Class overlay-->
+		<div id="exhibition_slide">
+			<!--Automatic image slideshow-->
+			<img class="mySlides w3-animate-fading" src="../images/Ex3.jpg">
+			<img class="mySlides w3-animate-fading" src="../images/Ex2.jpg">
+			<img class="mySlides w3-animate-fading" src="../images/Ex1.jpg">
+			<img class="mySlides w3-animate-fading" src="../images/Ex4.jpg">
+			<img class="mySlides w3-animate-fading" src="../images/Ex5.jpg">
+			<img class="mySlides w3-animate-fading" src="../images/Ex6.jpg">
+			<img class="mySlides w3-animate-fading" src="../images/Ex7.jpg">
+			<img class="mySlides w3-animate-fading" src="../images/Ex8.jpg">
+			<!--Javascript to make automatic image slider-->
+			<script> 700
+				var slideIndex = 0;
+				carousel();
+
+				function carousel() {
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none"; 
+					}
+					slideIndex++;
+					if (slideIndex > x.length) {slideIndex = 1} 
+					x[slideIndex-1].style.display = "block"; 
+					setTimeout(carousel, 2000);
+				}
+			</script>
+		</div>
+		<div id="exhibition">
+			<table align="center" border="1" cellspacing="15px" style="background-color:white;"> <!--Table Starts-->
+				<!--This code creates table which contains images and their captions-->
+				<tr>
+					<th>
+						<img src="../images/Ex3.jpg" width="400px" height="300px">
+						<figcaption  style="font-size:20px; padding-top:80px;"> First Look: 2017 Fine Print Party </figcaption>
+						<figcaption> Date: 1 Sept, 2017 </figcaption>
+						<figcaption> Starts at 2:15 p.m. </figcaption>
+						<figcaption> Membership Required </figcaption>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<img src="../images/Ex2.jpg" width="400px" height="300px">
+						<figcaption style="font-size:20px; padding-top:80px;"> Family Day </figcaption>
+						<figcaption> Date: 17 Sept, 2017 </figcaption>
+						<figcaption> Starts at 1:30 p.m.  </figcaption>
+						<figcaption> Free after membership </figcaption>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<img src="../images/Ex1.jpg" width="400px" height="300px">
+						<figcaption style="font-size:20px; padding-top:80px;"> Print Viewing: Found Photography </figcaption>
+						<figcaption> Date: 21 Oct, 2017 </figcaption>
+						<figcaption> Starts at 12:00 p.m.  </figcaption>
+						<figcaption> Free after membership </figcaption>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<img src="../images/Ex4.jpg" width="400px" height="300px">
+						<figcaption style="font-size:20px; padding-top:80px;"> Lecture in Photography: Zackary Drucer </figcaption>
+						<figcaption> Date: 12 Nov, 2017  </figcaption>
+						<figcaption> Starts at 5:30 p.m. - 7:30 p.m. </figcaption>
+						<figcaption> Free after membership </figcaption>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<img src="../images/Ex5.jpg" width="400px" height="300px">
+						<figcaption style="font-size:20px; padding-top:80px;"> Collection: Print Viewing </figcaption>
+						<figcaption> Date: 20 Nov, 2017 </figcaption>
+						<figcaption> Starts at 6:00 p.m. </figcaption>
+						<figcaption> Free after membership </figcaption>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<img src="../images/Ex6.jpg" width="400px" height="300px">
+						<figcaption style="font-size:20px; padding-top:80px;"> Never Sorry Screening at Low Res Studio </figcaption>
+						<figcaption> Date: 27 Nov, 2017 </figcaption>
+						<figcaption> Starts at 10:15 a.m. - 11:00 a.m. </figcaption>
+						<figcaption> Free after membership </figcaption>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<img src="../images/Ex7.jpg" width="400px" height="300px">
+						<figcaption style="font-size:20px; padding-top:80px;"> Museum Council Social </figcaption>
+						<figcaption> Date: 7 Dec, 2017 </figcaption>
+						<figcaption> Starts at 5:00 p.m. - 8:45 p.m. </figcaption>
+						<figcaption> Free after membership </figcaption>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<img src="../images/Ex8.jpg" width="400px" height="300px">
+						<figcaption style="font-size:20px; padding-top:80px;"> Conservation: About Ai Weiwei </figcaption>
+						<figcaption> Date: 28 Dec, 2017 </figcaption>
+						<figcaption> Starts at 1:00 p.m. - 4:00 p.m. </figcaption>
+						<figcaption> Free after membership </figcaption>
+					</th>
+				</tr>
+			</table> <!--Table Ends-->
+		</div>
+		<footer> <!--Footer Starts-->
+			<table class="footer_table"> <!--Table Starts-->
+				<!--This code creates table which contains text and image-->
+				<tr>
+					<td rowspan="9"><img src="../images/map.png" height="200px" width="250px"></td>
+					<th> Visit Us </th>
+					<th> Tickets </th>
+				</tr>
+				<tr>
+					<th> London Museum of Art & Photography </th>
+					<th> Membership </th>
+				</tr>
+				<tr>
+					<th> 421 Ridout Street North </th>
+					<th> Press </th>
+				</tr>
+				<tr>
+					<th> London, Ontario N8A 9H5 </th>
+					<th> Employment </th>
+				</tr>
+				<tr>
+					<th> 529-691-0355 </th>
+					<th> Privacy Policy </th>
+				</tr>
+				<tr>
+					<th> Sun-wed Open on: 10AM-5PM </th>
+					<th> Terms & Conditions </th>
+				</tr>
+				<tr>
+					<th> Thrus & Fri Open on: 10AM-4PM </th>
+					<th> Rent Space </th>
+				</tr>
+				<tr>
+					<th> Sat Open on: 7AM-7PM(Special offer for weekend) </th>
+					<th> Store </th>
+				</tr>
+				<tr>
+					<th> <!--Image and its styles-->
+						<img src="../images/fb.png" width="40px" height="40px">
+						<img src="../images/twitter.png" width="40px" height="35px">
+						<img src="../images/insta.png" width="40px" height="40px">
+					</th>
+				</tr>
+			</table> <!--Table Ends-->
+			<!--This code contains paragraph-->
+			<p align="center" style="color:brown"> Thank you to our funders </p> 
+			<p align="center" style="color:brown">&copy;London Museum of Art & Photography, Nepal Museum for Art and Pictures</p>
+		</footer> <!--Footer Ends-->
+	</body> <!--Body Ends-->
+</html>
